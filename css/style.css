@@ -1,0 +1,83 @@
+li{
+    display: inline;
+    margin: 0px 40px;
+}
+ul{
+    text-align: center;
+}
+a{
+    text-decoration: none;
+    color: white;
+    
+}
+a:hover{
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    text-shadow: 2px 2px 4px #ffffff;
+}
+button{
+    border-radius: 15px; 
+    padding: 7px 20px; 
+    background-color: #4CA6E8; 
+    border: none;
+    text-align: center;
+    color: white;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+button:hover{
+    background-color: #2c93dc;
+    font-size: 16.2px;
+    text-shadow: 2px 2px 4px rgb(22, 45, 67);
+}
+.content-wrapper {
+    position: relative;
+    width: 100vw; /* 100% chiều rộng của màn hình */
+    height: 50vh; /* 100% chiều cao của màn hình */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: radial-gradient(circle at 50% 50%, #5900ff, #3900A1, #20005B);
+    animation: rotateGalaxy 60s linear infinite;
+}
+.content-wrapper img {
+    max-width: 100%; /* Ảnh không vượt quá kích thước của container */
+    max-height: 100%; /* Ảnh không vượt quá kích thước của container */
+    object-fit: contain; /* Hiển thị toàn bộ ảnh trong kích thước đã cho, không cắt bớt */
+    position: absolute; /* Đặt ảnh ở vị trí tuyệt đối để tránh ảnh bị chồng lên nhau */
+}
+.text-wrapper {
+    position: absolute;
+    top: 75%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white; 
+    font-size: 12px; 
+    font-weight: bold; 
+    text-align: center;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+.navbar {
+    width: 100vw;
+    position: relative;
+    background-color: #3a02a3;
+    padding: 1px;
+    color: white;
+    text-align: center;
+    z-index: 2; /* Đảm bảo phần nav hiển thị trên hình ảnh */
+    display: flex;
+    align-items: center;
+    margin-right: 20px; /* Khoảng cách giữa logo và nav */
+    background: radial-gradient(circle at 50% 50%, #5900ff, #3900A1, #20005B);
+    animation: rotateGalaxy 60s linear infinite;
+  }
+body{
+    font-family:'Courier New', Courier, monospace;
+    background-color: #ffffff;
+    color: white;
+}
+
+
