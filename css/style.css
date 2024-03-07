@@ -15,7 +15,7 @@ a:hover{
     font-weight: bold;
     text-shadow: 2px 2px 4px #ffffff;
 }
-button{
+.button-link{
     border-radius: 15px; 
     padding: 7px 20px; 
     background-color: #4CA6E8; 
@@ -28,15 +28,15 @@ button{
     margin: 4px 2px;
     cursor: pointer;
 }
-button:hover{
+.button-link:hover{
     background-color: #2c93dc;
     font-size: 16.2px;
     text-shadow: 2px 2px 4px rgb(22, 45, 67);
 }
 .content-wrapper {
     position: relative;
-    width: 100vw; /* 100% chiều rộng của màn hình */
-    height: 50vh; /* 100% chiều cao của màn hình */
+    width: 100vw;
+    height: 50vh; 
     display: flex;
     align-items: center;
     justify-content: center;
@@ -51,12 +51,12 @@ button:hover{
 }
 .text-wrapper {
     position: absolute;
-    top: 75%;
+    top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    color: white; 
-    font-size: 12px; 
-    font-weight: bold; 
+    text-align: center;
+    color: white;
+    font-size: 12px;
     text-align: center;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
 }
