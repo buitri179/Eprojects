@@ -1,6 +1,6 @@
 li{
     display: inline;
-    margin: 0px 40px;
+    margin: 0px 60px;
 }
 ul{
     text-align: center;
@@ -17,9 +17,8 @@ a:hover{
 }
 .button-link{
     border-radius: 15px; 
-    padding: 7px 20px; 
+    padding: 6px 20px; 
     background-color: #4CA6E8; 
-    border: none;
     text-align: center;
     color: white;
     text-decoration: none;
@@ -27,10 +26,10 @@ a:hover{
     font-size: 16px;
     margin: 4px 2px;
     cursor: pointer;
+    font-style: italic;
 }
 .button-link:hover{
     background-color: #2c93dc;
-    font-size: 16.2px;
     text-shadow: 2px 2px 4px rgb(22, 45, 67);
 }
 .content-wrapper {
@@ -40,44 +39,90 @@ a:hover{
     display: flex;
     align-items: center;
     justify-content: center;
-    background: radial-gradient(circle at 50% 50%, #5900ff, #3900A1, #20005B);
-    animation: rotateGalaxy 60s linear infinite;
+    
 }
 .content-wrapper img {
-    max-width: 100%; /* Ảnh không vượt quá kích thước của container */
-    max-height: 100%; /* Ảnh không vượt quá kích thước của container */
-    object-fit: contain; /* Hiển thị toàn bộ ảnh trong kích thước đã cho, không cắt bớt */
-    position: absolute; /* Đặt ảnh ở vị trí tuyệt đối để tránh ảnh bị chồng lên nhau */
+    max-width: 100%; 
+    max-height: auto; 
+    object-fit: contain; 
+    position: absolute; 
+    object-fit: contain;
+    width: 100%;
+    height: auto;
+    z-index: 1;
+    
 }
 .text-wrapper {
     position: absolute;
-    top: 50%;
+    top: 100%;
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
     color: white;
-    font-size: 12px;
+    font-size: 20px;
     text-align: center;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+    z-index: 2;
 }
 .navbar {
     width: 100vw;
     position: relative;
-    background-color: #3a02a3;
     padding: 1px;
     color: white;
     text-align: center;
-    z-index: 2; /* Đảm bảo phần nav hiển thị trên hình ảnh */
+    z-index: 3; 
     display: flex;
     align-items: center;
-    margin-right: 20px; /* Khoảng cách giữa logo và nav */
-    background: radial-gradient(circle at 50% 50%, #5900ff, #3900A1, #20005B);
-    animation: rotateGalaxy 60s linear infinite;
-  }
-body{
-    font-family:'Courier New', Courier, monospace;
-    background-color: #ffffff;
-    color: white;
+    margin-right: 100px;
+    z-index: 3;
+    background: radial-gradient(circle, #20005B, #5900FF);
+    background-clip: padding-box; 
+    background-origin: border-box;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
 }
-
-
+body{
+    margin: 0;
+    padding: 0;
+    font-family:'Courier New', Courier, monospace;
+    color: black;
+    justify-content: center;
+    min-height: 100vh;
+}
+.row {
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+}
+.col-2 {
+    flex: 1;
+    margin-left: 5px;
+    text-align: center;
+}
+.col-2 img {
+    margin-top: 360px;
+    margin-left: 10px;
+    max-width: 100%;
+    height: auto;
+    object-fit: contain;
+    width: 1500px;
+    height: auto;
+}
+.logo{
+    object-fit: contain;
+    width: 150px;
+    height: auto;
+}
+.image-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    max-width: 800px; 
+}
+.image-grid img{
+    width: 100%;
+    height: auto;
+    margin: 10px;
+    max-width: 150px;
+}
