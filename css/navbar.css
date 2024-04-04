@@ -1,0 +1,112 @@
+.header{
+    margin-top: 61.44px;
+}
+#background-video {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+}
+section{
+    margin-top: 70px;
+}
+.navb{
+    background-image: linear-gradient(to right, #4CA6E8, rgb(0, 218, 218));
+    justify-content: none;
+    align-items: center;
+}
+.nav{
+    display: inline-block;
+    font-size: 15px;
+    margin-left: 485px;
+}
+.nav a{
+    color: #ffffff;
+}
+.nav a:hover{
+    color: #ffffff;
+    text-shadow: 2px 2px 4px #ffffff;
+    
+}
+.out-link{
+    margin: 0px 20px;
+    text-decoration: none;
+}
+.out-link:hover{
+    text-transform: bold;
+}
+.Diff_list{
+    position: relative;
+    display: inline-block; 
+}
+.arrow{
+    display: inline-block;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 5px 5px 0 5px;
+    border-color: #fff transparent transparent transparent;
+    margin-left: 5px;
+    vertical-align: middle;
+}
+.menu{
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 200px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    padding: 0;
+    z-index: 1;
+    
+
+}
+.menu a{
+    color: #494949;
+}
+.Diff_list:hover .menu{
+    display: block;
+}
+.drop-down{
+    position: relative;
+}
+.menu2{
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    z-index: 1;
+    top: 0;
+    left: 100%;
+}
+.drop-down:hover .menu2{
+    display: block;
+}
+.horizontal-arrow {
+    display: inline-block;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 3px 0 3px 5px;
+    border-color: transparent transparent transparent #000000;
+    vertical-align: middle;
+    margin-left: 116px;
+}
+.nav-link{
+    text-decoration: none;
+}
+.menu a:hover,
+.menu2 a:hover{
+    background-color: #827e7e;
+}
+.logo{
+    margin: 0;
+    object-fit: contain;
+    width: 200px;
+    height: auto;
+}
